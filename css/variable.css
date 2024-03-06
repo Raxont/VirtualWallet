@@ -1,0 +1,54 @@
+:root{
+    --color-primario: #33404F;
+    --color-secundario: #00DDA3;
+    --color-ternario: #FFFFFF;
+    --color-cuarto: #B5C5C3;
+}
+@font-face {
+    font-family: "SF-Pro-Text-Bold";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-BoldItalic";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-BoldItalic.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Heavy";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Heavy.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-HeavyItalic";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-HeavyItalic.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Light";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-LightItalic";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-LightItalic.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Medium";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Medium.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-MediumItalic";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-MediumItalic.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Regular";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-RegularItalic";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-RegularItalic.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-Semibold";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Semibold.otf);
+}
+@font-face {
+    font-family: "SF-Pro-Text-SemiboldItalic";
+    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-SemiboldItalic.otf);
+}
