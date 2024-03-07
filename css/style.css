@@ -1,5 +1,5 @@
 @import url(variable.css);
-
+@import url();
 * {
     margin: 0;
     padding: 0;
@@ -154,34 +154,110 @@ progress[value]::-moz-progress-bar {
     background: var(--color);
 }
 
-.blanco{
-    background: white;
+
+
+.blanco {
+    background: var(--color-ternario);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    width: 100vh;
 }
-.activities h1{
-    
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.activities h1 {
     color: var(--color-primario);
     font-size: 1.3em;
     font-family: "SF-Pro-Text-Bold";
-    display: flex;
-    flex-direction: column;
-    height: 120px;
-    justify-content: center;
-    padding: 0 1em
+    padding: .5em;
 }
 
-.account{
-    width: 100px;
-    height: 130px;
-    background: red;
-    border-radius: 30px;
-}
-.account h3{
+.account,
+.privacity,
+.help {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-family: "SF-Pro-Text-Bold";
+    text-decoration: none;
+    border: 2px solid #00000011;
+    border-radius: 30px;
+    width: 100px;
+    height: 150px;
 }
+
+.account img,
+.privacity img,
+.help img {
+    width: 58px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.account,
+.privacity,
+.help {
+    background: var(--color-ternario);
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.blanco ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.account,
+.privacity,
+.help {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+.transactions {
+    margin-top: 20px;
+    overflow-y: scroll; 
+    max-height: 190px;
+}
+
+.transactions h1 {
+    color: var(--color-primario);
+    font-family: "SF-Pro-Text-Bold";
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-ternario);
+}
+
+.imagen img {
+    width: 90vh;
+    height: 11vh;
+    margin-left: -100px; 
+}
+
+.img3 {
+    display: block;
+    width: 90vh;
+    height: 11vh;
+    margin-left: -100px;
+}
+
+
+
 
 
 
