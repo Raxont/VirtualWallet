@@ -10,10 +10,13 @@ body{
     background: var(--color-primario);
 }
 .banner{
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
+}
+.banner img{
+    width: 100%;
+    height: 105vh;
+    object-fit: cover;
 }
 .header {
     width: 100%;
@@ -33,10 +36,6 @@ body{
     align-items: center;
     gap: 5px;
 
-}
-
-.logo__icono {
-    /* background: green; */
 }
 
 .logo__icono img {
@@ -155,86 +154,67 @@ progress[value]::-moz-progress-bar {
     background: var(--color);
 }
 
-
-
 .blanco {
     background: var(--color-ternario);
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: .5em;
+    padding: 1.5em 0.5em;
     width: 60vh;
-    height: 78vh;
+    height: 70vh;
 }
-
 .activities {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
 }
-
-.activities h1 {
+.activities h3 {
     color: var(--color-primario);
     font-size: 1.3em;
     font-family: "SF-Pro-Text-Bold";
     padding: .5em;
 }
-
-.account,
-.privacity,
-.help {
-    
+.carrusel{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    height: 110px;
+    overflow-y: hidden; 
+    overflow-x: scroll;
+    max-width: 320px;
+}
+.carrusel li {  
+    display: flex;
     font-family: "SF-Pro-Text-Bold";
     text-decoration: none;
-    border: 2px solid #00000011;
-    border-radius: 30px;
+    border: 1px solid #00000011;
+    border-radius: 20px;
     width: 100px;
-    height: 150px;
-}
-
-.account img,
-.privacity img,
-.help img {
-    width: 58px;
-    height: 70px;
-    margin-bottom: 5px;
-}
-
-.account,
-.privacity,
-.help {
-    background: var(--color-ternario);
-    border-radius: 30px;
+    height: 100px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 0 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
+.carrusel li h3 {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+    text-align: center; /* Alinea el texto al centro si es necesario */
+}
+.carrusel li img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
 
 @media only screen and (max-width: 800px) {
-    .account:active,
-    .privacity:active,
-    .help:active {
+    .carrusel li:active {
         background: var(--color-secundario);
     }
 }
 
-.blanco ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.account,
-.privacity,
-.help {
-    flex-grow: 1;
-    margin: 0 10px;
-}
 .transactions {
     margin-top: 20px;
 }
