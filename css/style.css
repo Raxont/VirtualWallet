@@ -13,6 +13,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
+    z-index: -1;
 }
 .header {
     width: 100%;
@@ -163,7 +164,8 @@ progress[value]::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     padding: .5em;
-    width: 100vh;
+    width: 60vh;
+    height: 78vh;
 }
 
 .activities {
@@ -183,6 +185,7 @@ progress[value]::-moz-progress-bar {
 .account,
 .privacity,
 .help {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,6 +215,14 @@ progress[value]::-moz-progress-bar {
     margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+    .account:active,
+    .privacity:active,
+    .help:active {
+        background: var(--color-secundario);
+    }
+}
+
 .blanco ul {
     display: flex;
     list-style: none;
@@ -226,8 +237,6 @@ progress[value]::-moz-progress-bar {
 }
 .transactions {
     margin-top: 20px;
-    overflow-y: scroll; 
-    max-height: 190px;
 }
 
 .transactions h1 {
@@ -238,6 +247,9 @@ progress[value]::-moz-progress-bar {
 }
 
 .imagen {
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    max-height: 110px;
     display: flex;
     flex-direction: column;
     background: var(--color-ternario);
@@ -245,15 +257,12 @@ progress[value]::-moz-progress-bar {
 
 .imagen img {
     width: 90vh;
-    height: 11vh;
-    margin-left: -100px; 
+    height: 10vh;
+    margin-left: -110px; 
 }
 
 .img3 {
     display: block;
-    width: 90vh;
-    height: 11vh;
-    margin-left: -100px;
 }
 
 
@@ -277,7 +286,21 @@ progress[value]::-moz-progress-bar {
     list-style: none;
     margin: .5em 0;
 }
-
+.footer ul li a {
+    display: block;
+    position: relative;
+}
 .footer ul li a img {
     width: 2em;
+    transition: filter 0.3s;
+}
+.footer ul li a:active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-secundario);
+    z-index: -1;
 }
