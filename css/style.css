@@ -49,17 +49,9 @@ body{
     text-transform: uppercase;
 }
 
-.header__menu {
-    /* background: darkblue; */
-}
-
 .header__menu i {
     font-size: 3em;
     color: var(--color-ternario);
-}
-
-.main__titulo {
-    /* background: red; */
 }
 
 .titulo__card {
@@ -198,16 +190,14 @@ progress[value]::-moz-progress-bar {
     text-decoration: none;
 }
 .carrusel li h3 {
-    margin: 0; /* Elimina el margen por defecto del párrafo */
-    text-align: center; /* Alinea el texto al centro si es necesario */
+    margin: 0; 
+    text-align: center;
 }
 .carrusel li img{
     width: 50%;
     height: 50%;
     object-fit: cover;
 }
-
-
 
 @media only screen and (max-width: 800px) {
     .carrusel li:active {

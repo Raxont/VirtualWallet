@@ -21,7 +21,7 @@
     position: sticky;
     z-index: 2;
     top: 0;
-    background: var(--color-primario);
+    background: var(--color-ternario);
 }
 
 .header__logo {
@@ -39,14 +39,14 @@
 
 .logo__titulo {
     /* background: orange; */
-    color:  var(--color-ternario);
+    color: var(--color-primario);
     font-family: "SF-Pro-Text-Bold";
     text-transform: uppercase;
 }
 
 .header__menu i {
     font-size: 3em;
-    color: var(--color-ternario);
+    color: var(--color-primario);
 }
 
 
