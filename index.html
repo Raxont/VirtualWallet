@@ -6,91 +6,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="banner">
-        <img src="storage/img/banner.svg">
-    </div>
     <header class="header">
-        <div class="header__logo">
-            <div class="logo__icono">
-                <img src="storage/img/Frame_2.svg">
+        <div class="titulo__principal">
+            <div class="titulo__logo">PagaYa</div>
+            <div class="titulo__salir">
+                <i class='bx bx-x'></i>
             </div>
-            <div class="logo__titulo">invento</div>
         </div>
-        <div class="header__menu">
+        <div class="titulo__card">
             <i class='bx bx-menu'></i>
+            <h2>¿Cuánto tengo?</h2>
+            <i class='bx bx-bell' ></i>
         </div>
     </header>
     <main class="main">
-        <section class="main__titulo">
-            <article class="titulo__card">
-                <h2>Hi, Arthur!</h2>
-                <p>here’s your balance.</p>
-            </article>
-            <article class="titulo__balance">
-                <div class="balance__one">
-                    <small>savings</small>
-                    <label for="savings"><sub>$</sub> 15,615</label>
-                    <progress id="savings" max="100" value="70"></progress>
+        <div class="contenedor__menu">
+            <section class="main__menu">
+                <h2>Mi PagaYA</h2>
+                <br>
+                <h2>$0</h2>
+                <small>Disponible</small>
+            </section>
+            <section class="lista-rectangular">
+                <div class="item-rectangular"><i class='bx bx-money' ></i><p>Pagar</p></div>
+                <div class="item-rectangular"><i class='bx bx-transfer-alt'></i><p>Pasar Plata</p></div>
+                <div class="item-rectangular"><i class='bx bx-mobile' ></i><p>Recargar</p></div>
+            </section>
+            <section class="iconos">
+                <i class='bx bx-wallet-alt' >
+                    <p>Meter plata</p>
+                    <div class="bolsillo">
+                        <p>Bolsillo</p>
+                        <i class='bx bxs-message-square-add' ></i>
+                    </div>
+                </i>
+                <i class='bx bx-money-withdraw' >
+                    <p>Sacar plata</p>
+                    <div class="tarjeta">
+                        <p>Mi Tarjeta <br> virtual <br><br>$0</p>
+                    </div>
+                </i>
+            </section>
+            <section class="main__botton">
+                <div class="cuadro">
+                    <p>¿Cuánto tengo en total? <br> $0</p>
                 </div>
-                <div class="balance__two">
-                    <small>assets</small>
-                    <label for="savings"><sub>$</sub> 9,615</label>
-                    <progress id="savings" max="100" value="40"></progress>
-                </div>
-            </article>
-        </section>
-        <section class="blanco">
-            <article class="activities">
-                <h3>Activities</h3>
-                <ul class="carrusel">
-                    <li>
-                        <img src="storage/img/i1.svg">
-                        <h3>Account</h3>
-                    </li>
-                    <li>  
-                        <img src="storage/img/i3.svg">
-                        <h3>Privacity</h3>
-                    </li>
-                    <li>
-                        <img src="storage/img/i2.svg">
-                        <h3>Help</h3>
-                    </li>
-                    <li>
-                        <img src="storage/img/i1.svg">
-                        <h3>Account</h3>
-                    </li>
-                </ul>
-            </article>
-            <article class="transactions">
-                <h1>Transactions</h1>
-                <div class="imagen">   
-                    <img src="storage/img/money.svg">
-                    <img src="storage/img/Frame 8.svg">
-                    <img class="img3" src="storage/img/Frame 9.svg">
-                </div> 
-            </article>
-        </section>
+                <div class="ayuda">
+                    <i class='bx bx-help-circle' ></i>
+                    <p>¿Necesita Ayuda?</p>
+                </div>    
+                
+            </section>
+            
+        </div>    
     </main>
-    <footer class="footer">
-        <ul>
-            <li>
-                <a href=""><img src="storage/img/icon.svg"></a>
-            </li>
-            <li>
-                <a href="views/balance.html"><img src="storage/img/icon (1).svg"></a>
-            </li>
-            <li>
-                <a href="views/cards.html"><img src="storage/img/icon (2).svg"></a>
-            </li>
-            <li>
-                <a href="#"><img src="storage/img/icon (3).svg"></a>
-            </li>
-            <li>
-                <a href="index.html"><img src="storage/img/Group 218.svg"></a>
-            </li>
-        </ul>
-    </footer>
 </body>
 </html>
