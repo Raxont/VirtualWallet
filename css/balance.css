@@ -11,7 +11,7 @@
     width: 100%;
     padding: 0 .5em;
     /* height: 60px; */
-    /* background: var(--color-primario); */
+    background: var(--color-primario);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,8 +39,9 @@
     
 }
 
-.logo__icono img {
-    width: 3em;
+.logo__icono i {
+    width: 1em;
+    color: var(--color-cuarto);
 }
 
 .logo__titulo {
@@ -150,18 +151,6 @@
     height: 100%;
 }
 
-.main__semanas{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    letter-spacing: 17px;
-    text-transform: capitalize;
-}
-
-
-
 
 .main__final{
     margin-top: 50px;
@@ -169,7 +158,7 @@
     height: 25%;
     display: flex;
     flex-direction: row-reverse;
-    background: #E1FFEF;
+    background: var(--color-cuarto);
 }
    
 .main__icono{
@@ -202,10 +191,13 @@
     font-family: "SF-Pro-Text-Bold";
 }
 .main__texto p{
-    color: var(--color-cuarto);
+    color: var(--color-secundario);
     font-size: 10.6px;
     margin-right: 20px;
-   
+}
+.main__texto p a{
+    text-decoration: none;
+    color: var(--color-ternario);
 }
 .main__tarjeta{
     width: 85%;

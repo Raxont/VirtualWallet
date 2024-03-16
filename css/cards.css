@@ -21,7 +21,8 @@
     position: sticky;
     z-index: 2;
     top: 0;
-    background: var(--color-ternario);
+    background: var(--color-primario);
+    
 }
 
 .header__logo {
@@ -39,14 +40,14 @@
 
 .logo__titulo {
     /* background: orange; */
-    color: var(--color-primario);
+    color: var(--color-secundario);
     font-family: "SF-Pro-Text-Bold";
     text-transform: uppercase;
 }
 
 .header__menu i {
     font-size: 3em;
-    color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 
@@ -138,7 +139,7 @@
     display: block;
     font-family: "SF-Pro-Text-Regular";
     font-size: 1em;
-    color: var(--color-cuarto);
+    color: var(--color-secundario);
 }
 .public__description button{
     border: none;
@@ -185,10 +186,9 @@
 .cards__item{
     flex: 1;
     min-width: 200px;
-    background: url(../storage/img/card.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+    background: var(--color-primario);
+    border: 2px solid var(--color-secundario);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,22 +213,6 @@
     left: 2vw;
     bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

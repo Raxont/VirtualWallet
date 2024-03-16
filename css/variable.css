@@ -1,8 +1,8 @@
 :root{
-    --color-primario: #33404F;
-    --color-secundario: #00DDA3;
+    --color-primario: red;
+    --color-secundario: black;
     --color-ternario: #FFFFFF;
-    --color-cuarto: #B5C5C3;
+    --color-cuarto: cyan;
     
 }
 @font-face {
